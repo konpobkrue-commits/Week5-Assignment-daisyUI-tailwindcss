@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="valentine">
+
+<head>
+    <title>My Web Konpob</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    
+    <header class="navbar bg-base-100 shadow-md sticky top-0 z-50 justify-center">
+
+        <nav id="mobileMenu"
+            class="hidden md:flex md:flex-row md:gap-4 absolute md:static top-full left-0 w-full md:w-auto flex-col bg-base-100 md:bg-transparent shadow-md md:shadow-none p-3 md:p-0">
+            <a href="#home" class="px-5 py-3 md:py-2 rounded-full hover:bg-primary hover:text-primary-content transition-colors duration-200">
+                Home
+            </a>
+            <a href="#about" class="px-5 py-3 md:py-2 rounded-full hover:bg-primary hover:text-primary-content transition-colors duration-200">
+                About
+            </a>
+            <a href="#gallery" class="px-5 py-3 md:py-2 rounded-full hover:bg-primary hover:text-primary-content transition-colors duration-200">
+                Gallery
+            </a>
+        </nav>
+
+        <label class="swap swap-rotate ml-auto md:hidden cursor-pointer">
+            <input id="menuButton" type="checkbox">
+
+            <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                viewBox="0 0 512 512">
+                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"></path>
+            </svg>
+
+            <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                viewBox="0 0 512 512">
+                <polygon
+                    points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49">
+                </polygon>
+            </svg>
+        </label>
+
+    </header>
+
+
+    <main>
+
+        
+        <section id="home" class="hero min-h-[60vh] bg-base-200">
+            <div class="hero-content text-center">
+                <div>
+                    <p class="text-lg mb-3">CS240 Frontend Development</p>
+                    <h1 class="text-4xl md:text-6xl font-bold">Konpob Kruemyarat</h1>
+                    <p class="text-lg mt-5">Student ID: 1680704168</p>
+                    <a href="#gallery" class="btn btn-primary mt-6">View Gallery</a>
+                </div>
+            </div>
+        </section>
+
+
+      
+        <section id="about" class="p-8 md:p-16 bg-base-100">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">About</h2>
+                <p class="text-lg">
+                    My frontend development learning website.
+                    This website contains useful tools and technologies for web development.
+                </p>
+            </div>
+        </section>
+
+
+       
+        <section id="gallery" class="p-6 md:p-12 bg-base-200">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-6">
+
+
+               
+                <article class="card bg-base-100 shadow-xl">
+                    <figure class="h-48 p-5 bg-base-300">
+                        <img src="https://nakorncode.com/img/cheatsheets/vscode.webp" alt="Visual Studio Code"
+                            class="w-full h-full object-contain">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Visual Studio Code</h2>
+                        <p>Code editor for developers.</p>
+                        <div class="card-actions justify-end">
+                            <a href="https://nakorncode.com/cheatsheets/vscode/" class="btn btn-primary">View More</a>
+                        </div>
+                    </div>
+                </article>
+
+
+          
+                <article class="card bg-base-100 shadow-xl">
+                    <figure class="h-48 p-5 bg-base-300">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRbmxRh47BUL12zD-j9J9r6qtkHOqA_uiaJPX2ZQjLwoUfNv4M48mkX7VF&s=10"
+                            alt="Git" class="w-full h-full object-contain">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Git</h2>
+                        <p>Version control system.</p>
+                        <div class="card-actions justify-end">
+                            <a href="https://nakorncode.com/cheatsheets/git/" class="btn btn-primary">View More</a>
+                        </div>
+                    </div>
+                </article>
+
+
+            
+                <article class="card bg-base-100 shadow-xl">
+                    <figure class="h-48 p-5 bg-base-300">
+                        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/3840px-HTML5_logo_and_wordmark.svg.png"
+                            alt="HTML" class="w-full h-full object-contain">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">HTML</h2>
+                        <p>Structure of web pages.</p>
+                        <div class="card-actions justify-end">
+                            <a href="https://nakorncode.com/cheatsheets/html/" class="btn btn-primary">View More</a>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                <article class="card bg-base-100 shadow-xl">
+                    <figure class="h-48 p-5 bg-base-300">
+                        <img src="https://nakorncode.com/img/cheatsheets/css.webp" alt="CSS"
+                            class="w-full h-full object-contain">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">CSS</h2>
+                        <p>Styling web pages.</p>
+                        <div class="card-actions justify-end">
+                            <a href="https://nakorncode.com/cheatsheets/css/" class="btn btn-primary">View More</a>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                <article class="card bg-base-100 shadow-xl">
+                    <figure class="h-48 p-5 bg-base-300">
+                        <img src="https://nakorncode.com/img/cheatsheets/bootstrap.webp" alt="Bootstrap"
+                            class="w-full h-full object-contain">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Bootstrap</h2>
+                        <p>CSS component framework.</p>
+                        <div class="card-actions justify-end">
+                            <a href="https://getbootstrap.com/docs/5.0/examples/cheatsheet/"
+                                class="btn btn-primary">View More</a>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                <article class="card bg-base-100 shadow-xl">
+                    <figure class="h-48 p-5 bg-base-300">
+                        <img src="https://nakorncode.com/img/cheatsheets/tailwind.webp" alt="Tailwind CSS"
+                            class="w-full h-full object-contain">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Tailwind CSS</h2>
+                        <p>Utility-first CSS framework.</p>
+                        <div class="card-actions justify-end">
+                            <a href="https://nerdcave.com/tailwind-cheat-sheet" class="btn btn-primary">View More</a>
+                        </div>
+                    </div>
+                </article>
+
+
+   
+                <article class="card bg-base-100 shadow-xl">
+                    <figure class="h-48 p-5 bg-base-300">
+                        <img src="https://nakorncode.com/img/cheatsheets/javascript.webp" alt="JavaScript"
+                            class="w-full h-full object-contain">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">JavaScript</h2>
+                        <p>Programming language for websites.</p>
+                        <div class="card-actions justify-end">
+                            <a href="https://nakorncode.com/cheatsheets/javascript/" class="btn btn-primary">View
+                                More</a>
+                        </div>
+                    </div>
+                </article>
+
+
+    
+                <article class="card bg-base-100 shadow-xl">
+                    <figure class="h-48 p-5 bg-base-300">
+                        <img src="https://nakorncode.com/img/cheatsheets/typescript.webp" alt="TypeScript"
+                            class="w-full h-full object-contain">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">TypeScript</h2>
+                        <p>Typed version of JavaScript.</p>
+                        <div class="card-actions justify-end">
+                            <a href="https://nakorncode.com/cheatsheets/typescript/" class="btn btn-primary">View
+                                More</a>
+                        </div>
+                    </div>
+                </article>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer footer-center bg-base-300 text-base-content p-10">
+        <aside>
+            <h2 class="text-2xl md:text-3xl font-bold">Let's create something together.</h2>
+            <p>Konpob © 2026</p>
+            <a href="#home" class="btn btn-secondary">↑ Back to top</a>
+        </aside>
+    </footer>
+
+
+    <script>
+        const menuButton = document.getElementById("menuButton");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const menuLinks = mobileMenu.querySelectorAll("a");
+
+        menuButton.addEventListener("change", function () {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        menuLinks.forEach(function (link) {
+            link.addEventListener("click", function () {
+                if (window.innerWidth < 768) {
+                    mobileMenu.classList.add("hidden");
+                    menuButton.checked = false;
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
